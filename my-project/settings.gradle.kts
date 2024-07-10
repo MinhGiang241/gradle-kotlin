@@ -15,6 +15,12 @@ dependencyResolutionManagement {
     includeBuild("../my-other-project")
 }
 
-rootDir.listFiles().filter { it.isDirectory && !it.Hidden }.forEach {
+include("app")
+include("bussiness-logic")
+include("data-model")
+
+/*
+rootDir.listFiles().filter { it.isDirectory && !it.isHidden }.forEach {
     include(it.name)
 }
+*/
